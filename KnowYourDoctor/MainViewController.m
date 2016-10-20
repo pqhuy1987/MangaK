@@ -34,7 +34,7 @@
     [super viewDidLoad];
     
     theConfiguration = [[WKWebViewConfiguration alloc] init];
-    webView = [[WKWebView alloc] initWithFrame:CGRectMake(self.view.frame.origin.x, self.containerTab.frame.size.height, self.view.frame.size.width, self.view.frame.size.height) configuration:theConfiguration];
+    webView = [[WKWebView alloc] initWithFrame:CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y + 58, self.view.frame.size.width, self.view.frame.size.height) configuration:theConfiguration];
     webView.navigationDelegate = self;
     [webView addObserver:self forKeyPath:NSStringFromSelector(@selector(estimatedProgress)) options:NSKeyValueObservingOptionNew context:NULL];
     
