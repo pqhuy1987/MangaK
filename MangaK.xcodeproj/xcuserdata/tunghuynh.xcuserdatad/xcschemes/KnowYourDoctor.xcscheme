@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0800"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "975CC3C91D9F6980009A76C4"
-               BuildableName = "KnowYourDoctor.app"
-               BlueprintName = "KnowYourDoctor"
-               ReferencedContainer = "container:KnowYourDoctor.xcodeproj">
+               BuildableName = "MangaK.app"
+               BlueprintName = "MangaK"
+               ReferencedContainer = "container:MangaK.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "975CC3E51D9F6980009A76C4"
-               BuildableName = "KnowYourDoctorTests.xctest"
-               BlueprintName = "KnowYourDoctorTests"
-               ReferencedContainer = "container:KnowYourDoctor.xcodeproj">
+               BuildableName = "MangaKTests.xctest"
+               BlueprintName = "MangaKTests"
+               ReferencedContainer = "container:MangaK.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "975CC3F01D9F6980009A76C4"
-               BuildableName = "KnowYourDoctorUITests.xctest"
-               BlueprintName = "KnowYourDoctorUITests"
-               ReferencedContainer = "container:KnowYourDoctor.xcodeproj">
+               BuildableName = "MangaKUITests.xctest"
+               BlueprintName = "MangaKUITests"
+               ReferencedContainer = "container:MangaK.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "975CC3C91D9F6980009A76C4"
-            BuildableName = "KnowYourDoctor.app"
-            BlueprintName = "KnowYourDoctor"
-            ReferencedContainer = "container:KnowYourDoctor.xcodeproj">
+            BuildableName = "MangaK.app"
+            BlueprintName = "MangaK"
+            ReferencedContainer = "container:MangaK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "975CC3C91D9F6980009A76C4"
-            BuildableName = "KnowYourDoctor.app"
-            BlueprintName = "KnowYourDoctor"
-            ReferencedContainer = "container:KnowYourDoctor.xcodeproj">
+            BuildableName = "MangaK.app"
+            BlueprintName = "MangaK"
+            ReferencedContainer = "container:MangaK.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "975CC3C91D9F6980009A76C4"
-            BuildableName = "KnowYourDoctor.app"
-            BlueprintName = "KnowYourDoctor"
-            ReferencedContainer = "container:KnowYourDoctor.xcodeproj">
+            BuildableName = "MangaK.app"
+            BlueprintName = "MangaK"
+            ReferencedContainer = "container:MangaK.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
