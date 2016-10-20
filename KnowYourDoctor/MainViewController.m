@@ -11,8 +11,8 @@
 @import WebKit;
 
 #define FirstPage @"https://www.mangak.info"
-#define SecondPage @"https://www.facebook.com/knowyourdoctor.com.cy/?ref=aymt_homepage_panel"
-#define ThirdPage @"https://twitter.com/KYD_Cyprus"
+#define SecondPage @"https://www.mangak.info/hot/"
+#define ThirdPage @"https://www.mangak.info/full/"
 
 #define TABHEIGHT 58
 
