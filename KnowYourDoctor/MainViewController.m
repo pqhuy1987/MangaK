@@ -10,7 +10,7 @@
 #import "Help.h"
 @import WebKit;
 
-#define FirstPage @"http://www.knowyourdoctor.com.cy"
+#define FirstPage @"https://www.mangak.info"
 #define SecondPage @"https://www.facebook.com/knowyourdoctor.com.cy/?ref=aymt_homepage_panel"
 #define ThirdPage @"https://twitter.com/KYD_Cyprus"
 

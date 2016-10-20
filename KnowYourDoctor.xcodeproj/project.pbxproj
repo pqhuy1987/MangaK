@@ -220,6 +220,7 @@
 				TargetAttributes = {
 					975CC3C91D9F6980009A76C4 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = JQNK74493B;
 					};
 					975CC3E51D9F6980009A76C4 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -431,10 +432,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = KnowYourDoctor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CyprusCompanyy.KnowYourDoctor;
+				PRODUCT_BUNDLE_IDENTIFIER = MangaK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -442,10 +446,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = KnowYourDoctor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CyprusCompanyy.KnowYourDoctor;
+				PRODUCT_BUNDLE_IDENTIFIER = MangaK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -514,6 +521,7 @@
 				975CC3FC1D9F6980009A76C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		975CC3FD1D9F6980009A76C4 /* Build configuration list for PBXNativeTarget "KnowYourDoctorTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +530,7 @@
 				975CC3FF1D9F6980009A76C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		975CC4001D9F6980009A76C4 /* Build configuration list for PBXNativeTarget "KnowYourDoctorUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +539,7 @@
 				975CC4021D9F6980009A76C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
