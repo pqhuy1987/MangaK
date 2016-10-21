@@ -102,6 +102,9 @@
         [webView goBack];
     }
 }
+- (IBAction)OnTouchRefresh:(id)sender {
+    [webView reload];
+}
 
 
 - (IBAction)onTouchNext:(id)sender {
