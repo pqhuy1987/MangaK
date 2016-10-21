@@ -128,5 +128,20 @@
 }
 
 
+- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
+    
+    NSURLRequest *request = navigationAction.request;
+    NSURL *interURL = request.URL;
+    
+
+    if (navigationAction.navigationType == WKNavigationTypeLinkActivated) {
+        [self loadPage:interURL.absoluteString];
+    }
+    
+    if (decisionHandler) {
+        decisionHandler(WKNavigationActionPolicyAllow);
+    }
+}
+
 @end
 
