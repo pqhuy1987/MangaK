@@ -17,7 +17,7 @@
 #define TABHEIGHT 58
 
 @interface MainViewController () <WKNavigationDelegate> {
-    UIActivityIndicatorView *spinView;
+    //UIActivityIndicatorView *spinView;
     WKWebViewConfiguration *theConfiguration;
     WKWebView *webView;
 }
@@ -71,12 +71,12 @@
     NSURLRequest *nsrequest = [NSURLRequest requestWithURL:nsurl];
     [webView loadRequest:nsrequest];
     [self.view insertSubview:webView belowSubview:_bottomBar];
-    spinView = [Help createSpinView:self.view];
-    [spinView startAnimating];
+    //spinView = [Help createSpinView:self.view];
+    //[spinView startAnimating];
 }
 
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
-    [spinView stopAnimating];
+    //[spinView stopAnimating];
 }
 
 - (IBAction)onSwitchSegment:(id)sender {
