@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "975CC3C91D9F6980009A76C4"
-            BuildableName = "KnowYourDoctor.app"
-            BlueprintName = "KnowYourDoctor"
-            ReferencedContainer = "container:KnowYourDoctor.xcodeproj">
+            BuildableName = "MangaK.app"
+            BlueprintName = "MangaK"
+            ReferencedContainer = "container:MangaK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "975CC3C91D9F6980009A76C4"
-            BuildableName = "KnowYourDoctor.app"
-            BlueprintName = "KnowYourDoctor"
-            ReferencedContainer = "container:KnowYourDoctor.xcodeproj">
+            BuildableName = "MangaK.app"
+            BlueprintName = "MangaK"
+            ReferencedContainer = "container:MangaK.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>

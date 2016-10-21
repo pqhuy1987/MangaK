@@ -23,9 +23,9 @@
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FIR-x7-Baq">
                                         <segments>
-                                            <segment title="Main Page"/>
-                                            <segment title="Hot Page"/>
-                                            <segment title="FULL"/>
+                                            <segment title="MAIN PAGE"/>
+                                            <segment title="TRUYỆN HOT"/>
+                                            <segment title="HOÀN THÀNH"/>
                                         </segments>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
@@ -36,7 +36,7 @@
                                         <color key="tintColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </progressView>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.14560455389999999" green="0.41104679399999999" blue="0.1510378597" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="asF-Ie-E5Q" firstAttribute="top" secondItem="FIR-x7-Baq" secondAttribute="bottom" constant="8" symbolic="YES" id="C8u-cF-a9a"/>
                                     <constraint firstAttribute="trailing" secondItem="asF-Ie-E5Q" secondAttribute="trailing" id="CJG-V3-OqL"/>
@@ -72,7 +72,8 @@
                                         </connections>
                                     </barButtonItem>
                                 </items>
-                                <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" red="0.14560455389999999" green="0.41104679399999999" blue="0.1510378597" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="jrR-t0-wEt"/>
