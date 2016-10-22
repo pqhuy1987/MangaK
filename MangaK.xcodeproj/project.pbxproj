@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1298B4E81DBB9F58003BD37A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1298B4E71DBB9F58003BD37A /* GoogleService-Info.plist */; };
 		975CC3CF1D9F6980009A76C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 975CC3CE1D9F6980009A76C4 /* main.m */; };
 		975CC3D21D9F6980009A76C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 975CC3D11D9F6980009A76C4 /* AppDelegate.m */; };
 		975CC3D51D9F6980009A76C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 975CC3D41D9F6980009A76C4 /* ViewController.m */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1298B4E71DBB9F58003BD37A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		975CC3CA1D9F6980009A76C4 /* MangaK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MangaK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		975CC3CE1D9F6980009A76C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		975CC3D01D9F6980009A76C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 		975CC3C11D9F6980009A76C4 = {
 			isa = PBXGroup;
 			children = (
+				1298B4E71DBB9F58003BD37A /* GoogleService-Info.plist */,
 				975CC3CC1D9F6980009A76C4 /* KnowYourDoctor */,
 				975CC3E91D9F6980009A76C4 /* KnowYourDoctorTests */,
 				975CC3F41D9F6980009A76C4 /* KnowYourDoctorUITests */,
@@ -285,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				975CC3E01D9F6980009A76C4 /* LaunchScreen.storyboard in Resources */,
+				1298B4E81DBB9F58003BD37A /* GoogleService-Info.plist in Resources */,
 				975CC3DD1D9F6980009A76C4 /* Assets.xcassets in Resources */,
 				975CC3D81D9F6980009A76C4 /* Main.storyboard in Resources */,
 			);

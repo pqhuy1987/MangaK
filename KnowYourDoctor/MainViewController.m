@@ -119,6 +119,9 @@
 }
 - (IBAction)OnTouchRefresh:(id)sender {
     [webView reload];
+    [self interstisal];
+    
+    [self performSelector:@selector(LoadInterstitialAds) withObject:self afterDelay:2.0];
 }
 
 
