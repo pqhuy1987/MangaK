@@ -18,6 +18,7 @@
 		975CC3F61D9F6980009A76C4 /* KnowYourDoctorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 975CC3F51D9F6980009A76C4 /* KnowYourDoctorUITests.m */; };
 		975CC4051D9F700F009A76C4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 975CC4041D9F700F009A76C4 /* MainViewController.m */; };
 		975CC4081D9F7400009A76C4 /* Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 975CC4071D9F7400009A76C4 /* Help.m */; };
+		B9D4BB1652392F000DCA55C4 /* libPods-MangaK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCDC4745E4E2E8B4DCCE61A /* libPods-MangaK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,9 @@
 		975CC4041D9F700F009A76C4 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		975CC4061D9F7400009A76C4 /* Help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Help.h; sourceTree = "<group>"; };
 		975CC4071D9F7400009A76C4 /* Help.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Help.m; sourceTree = "<group>"; };
+		A5E468A83F2E75504F6A0468 /* Pods-MangaK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangaK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MangaK/Pods-MangaK.debug.xcconfig"; sourceTree = "<group>"; };
+		B3B80A223908B845366DBA62 /* Pods-MangaK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangaK.release.xcconfig"; path = "Pods/Target Support Files/Pods-MangaK/Pods-MangaK.release.xcconfig"; sourceTree = "<group>"; };
+		BFCDC4745E4E2E8B4DCCE61A /* libPods-MangaK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MangaK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9D4BB1652392F000DCA55C4 /* libPods-MangaK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +91,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A1353D9AA34196EAADA9E8B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5E468A83F2E75504F6A0468 /* Pods-MangaK.debug.xcconfig */,
+				B3B80A223908B845366DBA62 /* Pods-MangaK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2D258EF07D9F92DC4B0E0E07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFCDC4745E4E2E8B4DCCE61A /* libPods-MangaK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		975CC3C11D9F6980009A76C4 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +115,8 @@
 				975CC3E91D9F6980009A76C4 /* KnowYourDoctorTests */,
 				975CC3F41D9F6980009A76C4 /* KnowYourDoctorUITests */,
 				975CC3CB1D9F6980009A76C4 /* Products */,
+				2A1353D9AA34196EAADA9E8B /* Pods */,
+				2D258EF07D9F92DC4B0E0E07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,9 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 975CC3FA1D9F6980009A76C4 /* Build configuration list for PBXNativeTarget "MangaK" */;
 			buildPhases = (
+				3AAB0D57279AEF261FD09D4B /* [CP] Check Pods Manifest.lock */,
 				975CC3C61D9F6980009A76C4 /* Sources */,
 				975CC3C71D9F6980009A76C4 /* Frameworks */,
 				975CC3C81D9F6980009A76C4 /* Resources */,
+				68F7FC3C2279D849AE9F2BAE /* [CP] Embed Pods Frameworks */,
+				95D5F7501054748475544049 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -278,6 +305,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3AAB0D57279AEF261FD09D4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		68F7FC3C2279D849AE9F2BAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MangaK/Pods-MangaK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95D5F7501054748475544049 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MangaK/Pods-MangaK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		975CC3C61D9F6980009A76C4 /* Sources */ = {
@@ -434,6 +509,7 @@
 		};
 		975CC3FB1D9F6980009A76C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5E468A83F2E75504F6A0468 /* Pods-MangaK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -447,6 +523,7 @@
 		};
 		975CC3FC1D9F6980009A76C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3B80A223908B845366DBA62 /* Pods-MangaK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
