@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "Help.h"
 @import WebKit;
+@import GoogleMobileAds;
 
 #define FirstPage @"https://www.mangak.info"
 #define SecondPage @"https://www.mangak.info/hot/"
@@ -20,11 +21,18 @@
     //UIActivityIndicatorView *spinView;
     WKWebViewConfiguration *theConfiguration;
     WKWebView *webView;
+    
 }
 @property (weak, nonatomic) IBOutlet UIView *containerTab;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentTab;
 @property (weak, nonatomic) IBOutlet UIToolbar *bottomBar;
 @property (weak, nonatomic) IBOutlet UIProgressView *processView;
+
+@end
+
+@interface MainViewController ()<GADInterstitialDelegate>
+
+@property (nonatomic, strong) GADInterstitial *interstitial;
 
 @end
 
@@ -40,6 +48,8 @@
     
     [self setupView];
     [self loadPage:FirstPage];
+    
+    [self startNewGame];
 }
 
 - (void)setupView {
@@ -85,12 +95,15 @@
     {
         case 0:
             [self loadPage:FirstPage];
+            [self startNewGame];
             break;
         case 1:
             [self loadPage:SecondPage];
+            [self startNewGame];
             break;
         case 2:
             [self loadPage:ThirdPage];
+            [self startNewGame];
             break;
         default:
             break;
@@ -146,5 +159,21 @@
     }
 }
 
+-(void)createAndLoadInterstitial{
+    self.interstitial =
+    [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-3940256099942544/4411468910"];
+    
+    GADRequest *request = [GADRequest request];
+    // Request test ads on devices you specify. Your test device ID is printed to the console when
+    // an ad request is made.
+    request.testDevices = @[ kGADSimulatorID, @"bb3f849f9804eae0523d878052a26a41" ];
+    [self.interstitial loadRequest:request];
+
+}
+
+-(void)startNewGame{
+    
+    [self createAndLoadInterstitial];
+}
 @end
 
