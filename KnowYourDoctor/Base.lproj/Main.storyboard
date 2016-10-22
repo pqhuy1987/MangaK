@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="5TA-Uc-MZZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uYw-Ll-4bf">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6PL-y2-2h1">
@@ -127,15 +127,23 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firstimage" translatesAutoresizingMaskIntoConstraints="NO" id="sEV-xg-CUz">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firstimage" translatesAutoresizingMaskIntoConstraints="NO" id="sEV-xg-CUz">
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="gk5-6I-oJU"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="hdG-Zj-ugD"/>
                                     <constraint firstAttribute="width" constant="240" id="kM0-XR-U3A"/>
                                     <constraint firstAttribute="height" constant="240" id="mXb-dz-aff"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="qAH-K6-hhg"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="120"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="gk5-6I-oJU"/>
@@ -147,7 +155,9 @@
                         <constraints>
                             <constraint firstItem="sEV-xg-CUz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="165" id="3bz-ft-r7y"/>
                             <constraint firstItem="sEV-xg-CUz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="154" id="7MJ-Us-rjS"/>
+                            <constraint firstItem="sEV-xg-CUz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9MC-v9-MXv"/>
                             <constraint firstItem="sEV-xg-CUz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CsT-Z6-bUF"/>
+                            <constraint firstItem="sEV-xg-CUz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eEi-PC-OwK"/>
                             <constraint firstItem="sEV-xg-CUz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vEq-c8-zcK"/>
                         </constraints>
                         <variation key="default">

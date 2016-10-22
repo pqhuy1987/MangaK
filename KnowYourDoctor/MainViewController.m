@@ -17,6 +17,8 @@
 
 #define TABHEIGHT 58
 
+#define ADID @"ca-app-pub-5722562744549789/4125572158"
+
 @interface MainViewController () <WKNavigationDelegate> {
     //UIActivityIndicatorView *spinView;
     WKWebViewConfiguration *theConfiguration;
@@ -157,6 +159,7 @@
 
     if (navigationAction.navigationType == WKNavigationTypeLinkActivated) {
         [self loadPage:interURL.absoluteString];
+        [self.segmentTab setSelectedSegmentIndex:UISegmentedControlNoSegment];
     }
     
     if (decisionHandler) {
@@ -165,9 +168,7 @@
 }
 
 -(void)interstisal{
-    self.interstitial = [[GADInterstitial alloc] init];
-    self.interstitial.adUnitID = @"ca-app-pub-5722562744549789/4125572158";
-    //self.interstitial.adUnitID = @"​ca-app-pub-3940256099942544/4411468910";
+    self.interstitial = [[GADInterstitial alloc] initWithAdUnitID:ADID];
     
     self.interstitial.delegate = self;
     
