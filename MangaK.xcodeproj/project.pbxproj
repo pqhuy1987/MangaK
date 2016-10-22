@@ -12,11 +12,8 @@
 		975CC3D21D9F6980009A76C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 975CC3D11D9F6980009A76C4 /* AppDelegate.m */; };
 		975CC3D51D9F6980009A76C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 975CC3D41D9F6980009A76C4 /* ViewController.m */; };
 		975CC3D81D9F6980009A76C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975CC3D61D9F6980009A76C4 /* Main.storyboard */; };
-		975CC3DB1D9F6980009A76C4 /* KnowYourDoctor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 975CC3D91D9F6980009A76C4 /* KnowYourDoctor.xcdatamodeld */; };
 		975CC3DD1D9F6980009A76C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 975CC3DC1D9F6980009A76C4 /* Assets.xcassets */; };
 		975CC3E01D9F6980009A76C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975CC3DE1D9F6980009A76C4 /* LaunchScreen.storyboard */; };
-		975CC3EB1D9F6980009A76C4 /* KnowYourDoctorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 975CC3EA1D9F6980009A76C4 /* KnowYourDoctorTests.m */; };
-		975CC3F61D9F6980009A76C4 /* KnowYourDoctorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 975CC3F51D9F6980009A76C4 /* KnowYourDoctorUITests.m */; };
 		975CC4051D9F700F009A76C4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 975CC4041D9F700F009A76C4 /* MainViewController.m */; };
 		975CC4081D9F7400009A76C4 /* Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 975CC4071D9F7400009A76C4 /* Help.m */; };
 		B9D4BB1652392F000DCA55C4 /* libPods-MangaK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCDC4745E4E2E8B4DCCE61A /* libPods-MangaK.a */; };
@@ -48,16 +45,11 @@
 		975CC3D31D9F6980009A76C4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		975CC3D41D9F6980009A76C4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		975CC3D71D9F6980009A76C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		975CC3DA1D9F6980009A76C4 /* KnowYourDoctor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KnowYourDoctor.xcdatamodel; sourceTree = "<group>"; };
 		975CC3DC1D9F6980009A76C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		975CC3DF1D9F6980009A76C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		975CC3E11D9F6980009A76C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		975CC3E61D9F6980009A76C4 /* MangaKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MangaKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		975CC3EA1D9F6980009A76C4 /* KnowYourDoctorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnowYourDoctorTests.m; sourceTree = "<group>"; };
-		975CC3EC1D9F6980009A76C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		975CC3F11D9F6980009A76C4 /* MangaKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MangaKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		975CC3F51D9F6980009A76C4 /* KnowYourDoctorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnowYourDoctorUITests.m; sourceTree = "<group>"; };
-		975CC3F71D9F6980009A76C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		975CC4031D9F700F009A76C4 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		975CC4041D9F700F009A76C4 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		975CC4061D9F7400009A76C4 /* Help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Help.h; sourceTree = "<group>"; };
@@ -114,9 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				1298B4E71DBB9F58003BD37A /* GoogleService-Info.plist */,
-				975CC3CC1D9F6980009A76C4 /* KnowYourDoctor */,
-				975CC3E91D9F6980009A76C4 /* KnowYourDoctorTests */,
-				975CC3F41D9F6980009A76C4 /* KnowYourDoctorUITests */,
+				975CC3CC1D9F6980009A76C4 /* MangaK */,
 				975CC3CB1D9F6980009A76C4 /* Products */,
 				2A1353D9AA34196EAADA9E8B /* Pods */,
 				2D258EF07D9F92DC4B0E0E07 /* Frameworks */,
@@ -133,7 +123,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		975CC3CC1D9F6980009A76C4 /* KnowYourDoctor */ = {
+		975CC3CC1D9F6980009A76C4 /* MangaK */ = {
 			isa = PBXGroup;
 			children = (
 				975CC3D01D9F6980009A76C4 /* AppDelegate.h */,
@@ -148,9 +138,9 @@
 				975CC3DC1D9F6980009A76C4 /* Assets.xcassets */,
 				975CC3DE1D9F6980009A76C4 /* LaunchScreen.storyboard */,
 				975CC3E11D9F6980009A76C4 /* Info.plist */,
-				975CC3D91D9F6980009A76C4 /* KnowYourDoctor.xcdatamodeld */,
 				975CC3CD1D9F6980009A76C4 /* Supporting Files */,
 			);
+			name = MangaK;
 			path = KnowYourDoctor;
 			sourceTree = "<group>";
 		};
@@ -160,24 +150,6 @@
 				975CC3CE1D9F6980009A76C4 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		975CC3E91D9F6980009A76C4 /* KnowYourDoctorTests */ = {
-			isa = PBXGroup;
-			children = (
-				975CC3EA1D9F6980009A76C4 /* KnowYourDoctorTests.m */,
-				975CC3EC1D9F6980009A76C4 /* Info.plist */,
-			);
-			path = KnowYourDoctorTests;
-			sourceTree = "<group>";
-		};
-		975CC3F41D9F6980009A76C4 /* KnowYourDoctorUITests */ = {
-			isa = PBXGroup;
-			children = (
-				975CC3F51D9F6980009A76C4 /* KnowYourDoctorUITests.m */,
-				975CC3F71D9F6980009A76C4 /* Info.plist */,
-			);
-			path = KnowYourDoctorUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,7 +336,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				975CC4081D9F7400009A76C4 /* Help.m in Sources */,
-				975CC3DB1D9F6980009A76C4 /* KnowYourDoctor.xcdatamodeld in Sources */,
 				975CC3D51D9F6980009A76C4 /* ViewController.m in Sources */,
 				975CC3D21D9F6980009A76C4 /* AppDelegate.m in Sources */,
 				975CC4051D9F700F009A76C4 /* MainViewController.m in Sources */,
@@ -376,7 +347,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				975CC3EB1D9F6980009A76C4 /* KnowYourDoctorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,7 +354,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				975CC3F61D9F6980009A76C4 /* KnowYourDoctorUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,19 +594,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		975CC3D91D9F6980009A76C4 /* KnowYourDoctor.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				975CC3DA1D9F6980009A76C4 /* KnowYourDoctor.xcdatamodel */,
-			);
-			currentVersion = 975CC3DA1D9F6980009A76C4 /* KnowYourDoctor.xcdatamodel */;
-			path = KnowYourDoctor.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 975CC3C21D9F6980009A76C4 /* Project object */;
 }
