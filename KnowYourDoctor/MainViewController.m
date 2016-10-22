@@ -49,7 +49,9 @@
     [self setupView];
     [self loadPage:FirstPage];
     
-    [self startNewGame];
+    [self interstisal];
+    
+    [self performSelector:@selector(LoadInterstitialAds) withObject:self afterDelay:2.0];
 }
 
 - (void)setupView {
@@ -95,15 +97,15 @@
     {
         case 0:
             [self loadPage:FirstPage];
-            [self startNewGame];
+            //[self startNewGame];
             break;
         case 1:
             [self loadPage:SecondPage];
-            [self startNewGame];
+            //[self startNewGame];
             break;
         case 2:
             [self loadPage:ThirdPage];
-            [self startNewGame];
+            //[self startNewGame];
             break;
         default:
             break;
@@ -159,21 +161,24 @@
     }
 }
 
--(void)createAndLoadInterstitial{
-    self.interstitial =
-    [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-3940256099942544/4411468910"];
+-(void)interstisal{
+    self.interstitial = [[GADInterstitial alloc] init];
+    self.interstitial.adUnitID = @"ca-app-pub-5722562744549789/4125572158";
+    //self.interstitial.adUnitID = @"​ca-app-pub-3940256099942544/4411468910";
+    
+    self.interstitial.delegate = self;
     
     GADRequest *request = [GADRequest request];
-    // Request test ads on devices you specify. Your test device ID is printed to the console when
-    // an ad request is made.
-    request.testDevices = @[ kGADSimulatorID, @"bb3f849f9804eae0523d878052a26a41" ];
+
     [self.interstitial loadRequest:request];
 
 }
 
--(void)startNewGame{
+-(void)LoadInterstitialAds{
     
-    [self createAndLoadInterstitial];
+    if (self.interstitial.isReady) {
+        [self.interstitial presentFromRootViewController:self];
+    }
 }
 @end
 
