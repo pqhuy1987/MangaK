@@ -223,6 +223,7 @@
 					975CC3C91D9F6980009A76C4 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = JQNK74493B;
+						ProvisioningStyle = Manual;
 					};
 					975CC3E51D9F6980009A76C4 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -485,12 +486,15 @@
 			baseConfigurationReference = A5E468A83F2E75504F6A0468 /* Pods-MangaK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Pham Quang Huy (JQNK74493B)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Pham Quang Huy (JQNK74493B)";
 				DEVELOPMENT_TEAM = JQNK74493B;
 				INFOPLIST_FILE = KnowYourDoctor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.mangak.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8fcb3536-481f-4b17-9eb5-0f70680fa578";
+				PROVISIONING_PROFILE_SPECIFIER = Mangak;
 			};
 			name = Debug;
 		};
@@ -499,12 +503,15 @@
 			baseConfigurationReference = B3B80A223908B845366DBA62 /* Pods-MangaK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Pham Quang Huy (JQNK74493B)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Pham Quang Huy (JQNK74493B)";
 				DEVELOPMENT_TEAM = JQNK74493B;
 				INFOPLIST_FILE = KnowYourDoctor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.mangak.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8fcb3536-481f-4b17-9eb5-0f70680fa578";
+				PROVISIONING_PROFILE_SPECIFIER = Mangak;
 			};
 			name = Release;
 		};
