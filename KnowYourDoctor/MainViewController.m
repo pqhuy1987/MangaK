@@ -43,6 +43,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self interstisal];
+    
+    [self performSelector:@selector(LoadInterstitialAds) withObject:self afterDelay:1.0];
+    
     theConfiguration = [[WKWebViewConfiguration alloc] init];
     webView = [[WKWebView alloc] initWithFrame:CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y + 58, self.view.frame.size.width, self.view.frame.size.height) configuration:theConfiguration];
     webView.navigationDelegate = self;
@@ -51,9 +55,7 @@
     [self setupView];
     [self loadPage:FirstPage];
     
-    [self interstisal];
-    
-    [self performSelector:@selector(LoadInterstitialAds) withObject:self afterDelay:2.0];
+
 }
 
 - (void)setupView {
@@ -99,15 +101,21 @@
     {
         case 0:
             [self loadPage:FirstPage];
-            //[self startNewGame];
+            [self interstisal];
+            
+            [self performSelector:@selector(LoadInterstitialAds) withObject:self afterDelay:1.0];
             break;
         case 1:
             [self loadPage:SecondPage];
-            //[self startNewGame];
+            [self interstisal];
+            
+            [self performSelector:@selector(LoadInterstitialAds) withObject:self afterDelay:1.0];
             break;
         case 2:
             [self loadPage:ThirdPage];
-            //[self startNewGame];
+            [self interstisal];
+            
+            [self performSelector:@selector(LoadInterstitialAds) withObject:self afterDelay:1.0];
             break;
         default:
             break;
@@ -121,9 +129,6 @@
 }
 - (IBAction)OnTouchRefresh:(id)sender {
     [webView reload];
-    [self interstisal];
-    
-    [self performSelector:@selector(LoadInterstitialAds) withObject:self afterDelay:2.0];
 }
 
 
