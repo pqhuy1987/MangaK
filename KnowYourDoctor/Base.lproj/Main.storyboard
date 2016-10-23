@@ -34,6 +34,7 @@
                                     </segmentedControl>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="asF-Ie-E5Q">
                                         <color key="tintColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="progressTintColor" red="0.0031757031101733446" green="0.10314358025789261" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </progressView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.14560455389999999" green="0.41104679399999999" blue="0.1510378597" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
