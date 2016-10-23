@@ -11,13 +11,15 @@
 @import WebKit;
 @import GoogleMobileAds;
 
-#define FirstPage @"https://www.mangak.info"
-#define SecondPage @"https://www.mangak.info/hot/"
-#define ThirdPage @"https://www.mangak.info/full/"
+#define FirstPage @"http://m.mangafox.me/"
+#define SecondPage @"http://m.mangafox.me/search/status/new"
+#define ThirdPage @"http://m.mangafox.me/search/status/completed"
+#define FourPage @"http://m.mangafox.me/search/status/ongoing"
+#define FivePage @"http://m.mangafox.me/search/status/updated"
 
 #define TABHEIGHT 58
 
-#define ADID @"ca-app-pub-5722562744549789/4125572158"
+#define ADID @"ca-app-pub-5722562744549789/1045851359"
 
 @interface MainViewController () <WKNavigationDelegate> {
     //UIActivityIndicatorView *spinView;
@@ -113,6 +115,18 @@
             break;
         case 2:
             [self loadPage:ThirdPage];
+            [self interstisal];
+            
+            [self performSelector:@selector(LoadInterstitialAds) withObject:self afterDelay:1.0];
+            break;
+        case 3:
+            [self loadPage:FourPage];
+            [self interstisal];
+            
+            [self performSelector:@selector(LoadInterstitialAds) withObject:self afterDelay:1.0];
+            break;
+        case 4:
+            [self loadPage:FivePage];
             [self interstisal];
             
             [self performSelector:@selector(LoadInterstitialAds) withObject:self afterDelay:1.0];
