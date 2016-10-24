@@ -21,7 +21,7 @@
 
 #define TABHEIGHT 58
 
-#define ADID @"ca-app-pub-5722562744549789/4125572158"
+#define ADID @"ca-app-pub-5722562744549789/1272850550"
 
 @interface MainViewController () <WKNavigationDelegate> {
     //UIActivityIndicatorView *spinView;
