@@ -489,7 +489,7 @@
 				DEVELOPMENT_TEAM = JQNK74493B;
 				INFOPLIST_FILE = KnowYourDoctor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.mangak.100;
+				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.mangahere.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -503,7 +503,7 @@
 				DEVELOPMENT_TEAM = JQNK74493B;
 				INFOPLIST_FILE = KnowYourDoctor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.mangak.100;
+				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.mangahere.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
