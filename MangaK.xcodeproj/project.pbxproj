@@ -223,6 +223,7 @@
 					975CC3C91D9F6980009A76C4 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = JQNK74493B;
+						ProvisioningStyle = Manual;
 					};
 					975CC3E51D9F6980009A76C4 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -486,12 +487,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = JQNK74493B;
 				INFOPLIST_FILE = KnowYourDoctor/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.zingbox.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "74f84cf2-d40a-4bdc-89ed-3026b47058ff";
+				PROVISIONING_PROFILE_SPECIFIER = ZingBox;
 			};
 			name = Debug;
 		};
@@ -501,12 +505,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = JQNK74493B;
 				INFOPLIST_FILE = KnowYourDoctor/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.zingbox.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "74f84cf2-d40a-4bdc-89ed-3026b47058ff";
+				PROVISIONING_PROFILE_SPECIFIER = ZingBox;
 			};
 			name = Release;
 		};
