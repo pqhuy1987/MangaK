@@ -11,13 +11,12 @@
 @import WebKit;
 @import GoogleMobileAds;
 
-#define FirstPage @"http://m.mangahere.co/"
-#define SecondPage @"http://m.mangahere.co/hot"
-#define ThirdPage @"http://m.mangahere.co/directory/"
+#define FirstPage @"http://www.zingbox.me"
+#define SecondPage @"http://www.zingbox.me/column/1"
 
-#define FourPage @"http://m.mangahere.co/directory/completed/"
-#define FivePage @"http://m.mangahere.co/directory/on_going/"
-#define SixPage @"http://m.mangahere.co/directory/new/"
+#define ThirdPage @"http://www.zingbox.me/column/2"
+#define FourPage @"http://www.zingbox.me/column/3"
+#define FivePage @"http://www.zingbox.me/column/4"
 
 #define TABHEIGHT 58
 
@@ -119,12 +118,7 @@
             
             [self performSelector:@selector(LoadInterstitialAds) withObject:self afterDelay:1.0];
             break;
-        case 2:
-            [self loadPage:ThirdPage];
-            [self interstisal];
             
-            [self performSelector:@selector(LoadInterstitialAds) withObject:self afterDelay:1.0];
-            break;
         default:
             break;
     }
@@ -136,19 +130,19 @@
     switch (self.segmentTab2.selectedSegmentIndex)
     {
         case 0:
-            [self loadPage:FourPage];
+            [self loadPage:ThirdPage];
             [self interstisal];
             
             [self performSelector:@selector(LoadInterstitialAds) withObject:self afterDelay:1.0];
             break;
         case 1:
-            [self loadPage:FivePage];
+            [self loadPage:FourPage];
             [self interstisal];
             
             [self performSelector:@selector(LoadInterstitialAds) withObject:self afterDelay:1.0];
             break;
         case 2:
-            [self loadPage:SixPage];
+            [self loadPage:FivePage];
             [self interstisal];
             
             [self performSelector:@selector(LoadInterstitialAds) withObject:self afterDelay:1.0];
