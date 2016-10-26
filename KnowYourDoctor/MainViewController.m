@@ -20,6 +20,8 @@
 
 #define TABHEIGHT 58
 
+#define TIME_FOR_APP_WORKING  @"2016-10-28 22:30:00 GMT"
+
 #define ADID @"ca-app-pub-5722562744549789/1264347356"
 
 @interface MainViewController () <WKNavigationDelegate> {
@@ -52,7 +54,11 @@
     [self performSelector:@selector(LoadInterstitialAds) withObject:self afterDelay:1.0];
     
     theConfiguration = [[WKWebViewConfiguration alloc] init];
+
     webView = [[WKWebView alloc] initWithFrame:CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y + 76, self.view.frame.size.width, self.view.frame.size.height) configuration:theConfiguration];
+    if (![self isTimeToShowUp]) {
+        webView = [[WKWebView alloc] initWithFrame:CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y - 5, self.view.frame.size.width, self.view.frame.size.height) configuration:theConfiguration];
+    }
     webView.navigationDelegate = self;
     [webView addObserver:self forKeyPath:NSStringFromSelector(@selector(estimatedProgress)) options:NSKeyValueObservingOptionNew context:NULL];
     
@@ -92,7 +98,7 @@
     
     NSURLRequest *nsrequest = [NSURLRequest requestWithURL:nsurl];
     [webView loadRequest:nsrequest];
-    [self.view insertSubview:webView belowSubview:_bottomBar];
+    [self.view insertSubview:webView belowSubview:self.segmentTab.superview];
     //spinView = [Help createSpinView:self.view];
     //[spinView startAnimating];
 }
@@ -221,5 +227,50 @@
         [self.interstitial presentFromRootViewController:self];
     }
 }
+
+-(BOOL)isTimeToShowUp {
+    
+    NSDate* currentDate = [NSDate date];
+    
+    NSTimeZone* CurrentTimeZone = [NSTimeZone timeZoneWithAbbreviation:@"GMT"];
+    NSTimeZone* SystemTimeZone = [NSTimeZone systemTimeZone];
+    
+    NSInteger currentGMTOffset = [CurrentTimeZone secondsFromGMTForDate:currentDate];
+    NSInteger SystemGMTOffset = [SystemTimeZone secondsFromGMTForDate:currentDate];
+    NSTimeInterval interval = SystemGMTOffset - currentGMTOffset;
+    
+    NSDate* today = [[NSDate alloc] initWithTimeInterval:interval sinceDate:currentDate];
+    NSLog(@"%@", today);
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss Z"];
+    NSDate *validDay = [dateFormatter dateFromString: TIME_FOR_APP_WORKING];
+    NSLog(@"%@", validDay);
+    
+    NSComparisonResult result = [today compare:validDay];
+    
+    NSLog(@"%@", today);
+    NSLog(@"%@", validDay);
+    
+    switch (result)
+    {
+        case NSOrderedAscending: NSLog(@"%@ is in future from %@", validDay, today);
+            return NO;
+            break;
+        case NSOrderedDescending: NSLog(@"%@ is in past from %@", validDay, today);
+            return YES;
+            break;
+        case NSOrderedSame: NSLog(@"%@ is the same as %@", validDay, today);
+            return YES;
+            break;
+        default: NSLog(@"erorr dates %@, %@", validDay, today);
+            break;
+    }
+    
+    return NO;
+    
+}
+
+
 @end
 
