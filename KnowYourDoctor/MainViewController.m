@@ -11,17 +11,17 @@
 @import WebKit;
 @import GoogleMobileAds;
 
-#define FirstPage @"http://m.mangahere.co/"
-#define SecondPage @"http://m.mangahere.co/hot"
-#define ThirdPage @"http://m.mangahere.co/directory/"
+#define FirstPage @"http://haynhucnhoi.vn/"
+#define SecondPage @"http://haynhucnhoi.vn/new"
+#define ThirdPage @"http://haynhucnhoi.vn/video/new"
 
-#define FourPage @"http://m.mangahere.co/directory/completed/"
-#define FivePage @"http://m.mangahere.co/directory/on_going/"
-#define SixPage @"http://m.mangahere.co/directory/new/"
+#define FourPage @"http://haynhucnhoi.vn/gif"
+#define FivePage @"http://haynhucnhoi.vn/chu-de/truyen-tranh-xao-lon"
+#define SixPage @"http://haynhucnhoi.vn/chu-de/truyen-tranh-hay-nhuc-nhoi"
 
 #define TABHEIGHT 58
 
-#define ADID @"ca-app-pub-5722562744549789/1272850550"
+#define ADID @"ca-app-pub-5722562744549789/2259742550"
 
 @interface MainViewController () <WKNavigationDelegate> {
     //UIActivityIndicatorView *spinView;

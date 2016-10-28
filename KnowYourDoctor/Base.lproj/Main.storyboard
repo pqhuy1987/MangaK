@@ -15,18 +15,18 @@
                         <viewControllerLayoutGuide type="bottom" id="5TA-Uc-MZZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uYw-Ll-4bf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6PL-y2-2h1">
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FIR-x7-Baq">
                                         <segments>
-                                            <segment title="HOME"/>
-                                            <segment title="HOT"/>
-                                            <segment title="GENRES"/>
+                                            <segment title="TRANG CHỦ"/>
+                                            <segment title="THỚT MỚI"/>
+                                            <segment title="VIDEO MỚI"/>
                                         </segments>
-                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                         <connections>
                                             <action selector="onSwitchSegment:" destination="tEt-Xw-GHc" eventType="valueChanged" id="sr1-CD-RT3"/>
                                         </connections>
@@ -36,17 +36,17 @@
                                     </progressView>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="grf-XP-cSn">
                                         <segments>
-                                            <segment title="COMPLETED"/>
-                                            <segment title="ON GOING"/>
-                                            <segment title="NEW"/>
+                                            <segment title="HÌNH ĐỘNG"/>
+                                            <segment title="XÀO LỘN"/>
+                                            <segment title="NHỨC NHÓI"/>
                                         </segments>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                         <connections>
                                             <action selector="onSwitchSegment2:" destination="tEt-Xw-GHc" eventType="valueChanged" id="5wt-6j-s2K"/>
                                         </connections>
                                     </segmentedControl>
                                 </subviews>
-                                <color key="backgroundColor" red="0.071620680391788483" green="0.60662806034088135" blue="0.78641903400421143" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.97245663404464722" green="0.97261565923690796" blue="0.97242289781570435" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="grf-XP-cSn" secondAttribute="trailing" constant="8" id="6qw-Lg-rfB"/>
                                     <constraint firstAttribute="height" constant="76" id="HAi-IP-saF"/>
@@ -66,11 +66,10 @@
                             </view>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUG-E5-K7C">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="KXX-aQ-IZa"/>
-                                    <constraint firstAttribute="height" constant="44" id="jrR-t0-wEt"/>
+                                    <constraint firstAttribute="height" constant="25" id="YZA-lp-cFp"/>
                                 </constraints>
                                 <items>
-                                    <barButtonItem title="Back" id="Vp5-Xh-gky">
+                                    <barButtonItem systemItem="rewind" id="Vp5-Xh-gky">
                                         <connections>
                                             <action selector="onTouchBack:" destination="tEt-Xw-GHc" id="Ebb-1W-gab"/>
                                         </connections>
@@ -82,36 +81,25 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="ryF-1Q-y9R"/>
-                                    <barButtonItem title="Forward" id="of1-25-Fgo">
+                                    <barButtonItem systemItem="fastForward" id="of1-25-Fgo">
                                         <connections>
                                             <action selector="onTouchNext:" destination="tEt-Xw-GHc" id="Qkr-9U-HBG"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="barTintColor" red="0.071620680391788483" green="0.60662806034088135" blue="0.78641903400421143" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="jrR-t0-wEt"/>
-                                    </mask>
-                                </variation>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" red="0.97245663404464722" green="0.97261565923690796" blue="0.97242289781570435" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="5TA-Uc-MZZ" firstAttribute="top" secondItem="wUG-E5-K7C" secondAttribute="bottom" id="8aY-cY-GMA"/>
+                            <constraint firstAttribute="trailing" secondItem="wUG-E5-K7C" secondAttribute="trailing" constant="-4" id="5I0-Gw-7TN"/>
+                            <constraint firstItem="wUG-E5-K7C" firstAttribute="leading" secondItem="uYw-Ll-4bf" secondAttribute="leading" constant="-4" id="6Su-KB-uXz"/>
                             <constraint firstAttribute="trailing" secondItem="6PL-y2-2h1" secondAttribute="trailing" constant="-4" id="IyV-Db-mw5"/>
-                            <constraint firstItem="wUG-E5-K7C" firstAttribute="leading" secondItem="6PL-y2-2h1" secondAttribute="leading" id="RHV-cU-rw9"/>
-                            <constraint firstItem="5TA-Uc-MZZ" firstAttribute="top" secondItem="wUG-E5-K7C" secondAttribute="bottom" id="SAg-vb-aEv"/>
+                            <constraint firstAttribute="bottom" secondItem="wUG-E5-K7C" secondAttribute="bottom" id="NP9-bw-O8z"/>
                             <constraint firstItem="6PL-y2-2h1" firstAttribute="top" secondItem="uYw-Ll-4bf" secondAttribute="top" id="UqQ-vS-WP8"/>
-                            <constraint firstItem="wUG-E5-K7C" firstAttribute="trailing" secondItem="6PL-y2-2h1" secondAttribute="trailing" id="Y07-i3-ON0"/>
                             <constraint firstItem="6PL-y2-2h1" firstAttribute="leading" secondItem="uYw-Ll-4bf" secondAttribute="leading" constant="-4" id="mFL-1K-Tth"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="SAg-vb-aEv"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="bottomBar" destination="wUG-E5-K7C" id="SJr-K4-gPG"/>
@@ -134,7 +122,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firstimage" translatesAutoresizingMaskIntoConstraints="NO" id="sEV-xg-CUz">
@@ -158,7 +146,7 @@
                                 </variation>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.071620680389999997" green="0.60662806030000005" blue="0.78641903400000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.97245663404464722" green="0.97261565923690796" blue="0.97242289781570435" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="sEV-xg-CUz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="165" id="3bz-ft-r7y"/>
                             <constraint firstItem="sEV-xg-CUz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="154" id="7MJ-Us-rjS"/>

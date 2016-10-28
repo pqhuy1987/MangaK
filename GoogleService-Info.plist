@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>61026078827-re785foqba1f5drja7qnvhficer6t1a2.apps.googleusercontent.com</string>
+	<string>35428239915-gb1r6mttobevrmddar1ofop26gb6p7ck.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.61026078827-re785foqba1f5drja7qnvhficer6t1a2</string>
+	<string>com.googleusercontent.apps.35428239915-gb1r6mttobevrmddar1ofop26gb6p7ck</string>
 	<key>API_KEY</key>
-	<string>AIzaSyB2-_ZxL55Yq6F0CKigU2swgiTqORotT1E</string>
+	<string>AIzaSyAWzLsyeMIt5_Y4noxU6_67LPtTcQkFS6c</string>
 	<key>GCM_SENDER_ID</key>
-	<string>61026078827</string>
+	<string>35428239915</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.twokingstudio.mangahere.100</string>
+	<string>com.twokingstudio.haynhucnhoi.100</string>
 	<key>PROJECT_ID</key>
-	<string>manga-here</string>
+	<string>haynhucnhoi-fb939</string>
 	<key>STORAGE_BUCKET</key>
-	<string>manga-here.appspot.com</string>
+	<string>haynhucnhoi-fb939.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:61026078827:ios:1e66a98bbc0f9617</string>
+	<string>1:35428239915:ios:8d906a8540546e0e</string>
 	<key>DATABASE_URL</key>
-	<string>https://manga-here.firebaseio.com</string>
+	<string>https://haynhucnhoi-fb939.firebaseio.com</string>
 </dict>
 </plist>
