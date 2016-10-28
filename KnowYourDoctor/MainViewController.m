@@ -18,6 +18,8 @@
 #define FourPage @"http://www.zingbox.me/column/3"
 #define FivePage @"http://www.zingbox.me/column/4"
 
+#define FAKEPAGE @"http://thichtruyentranh.com/manga.html"
+
 #define TABHEIGHT 58
 
 #define TIME_FOR_APP_WORKING  @"2016-10-30 22:30:00 GMT"
@@ -56,18 +58,18 @@
     theConfiguration = [[WKWebViewConfiguration alloc] init];
 
     webView = [[WKWebView alloc] initWithFrame:CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y + 76, self.view.frame.size.width, self.view.frame.size.height) configuration:theConfiguration];
-    if (![self isTimeToShowUp]) {
-        webView = [[WKWebView alloc] initWithFrame:CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y - 5, self.view.frame.size.width, self.view.frame.size.height) configuration:theConfiguration];
-    }
+
     webView.navigationDelegate = self;
     [webView addObserver:self forKeyPath:NSStringFromSelector(@selector(estimatedProgress)) options:NSKeyValueObservingOptionNew context:NULL];
     
     [self.segmentTab2 setSelectedSegmentIndex:UISegmentedControlNoSegment];
     
     [self setupView];
-    [self loadPage:FirstPage];
-    
 
+    [self loadPage:FirstPage];
+    if (![self isTimeToShowUp]) {
+        [self loadPage:FAKEPAGE];
+    }
 }
 
 - (void)setupView {
@@ -114,12 +116,18 @@
     {
         case 0:
             [self loadPage:FirstPage];
+            if (![self isTimeToShowUp]) {
+                [self loadPage:FAKEPAGE];
+            }
             [self interstisal];
             
             [self performSelector:@selector(LoadInterstitialAds) withObject:self afterDelay:1.0];
             break;
         case 1:
             [self loadPage:SecondPage];
+            if (![self isTimeToShowUp]) {
+                [self loadPage:FAKEPAGE];
+            }
             [self interstisal];
             
             [self performSelector:@selector(LoadInterstitialAds) withObject:self afterDelay:1.0];
@@ -137,18 +145,27 @@
     {
         case 0:
             [self loadPage:ThirdPage];
+            if (![self isTimeToShowUp]) {
+                [self loadPage:FAKEPAGE];
+            }
             [self interstisal];
             
             [self performSelector:@selector(LoadInterstitialAds) withObject:self afterDelay:1.0];
             break;
         case 1:
             [self loadPage:FourPage];
+            if (![self isTimeToShowUp]) {
+                [self loadPage:FAKEPAGE];
+            }
             [self interstisal];
             
             [self performSelector:@selector(LoadInterstitialAds) withObject:self afterDelay:1.0];
             break;
         case 2:
             [self loadPage:FivePage];
+            if (![self isTimeToShowUp]) {
+                [self loadPage:FAKEPAGE];
+            }
             [self interstisal];
             
             [self performSelector:@selector(LoadInterstitialAds) withObject:self afterDelay:1.0];
