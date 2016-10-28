@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,16 +15,16 @@
                         <viewControllerLayoutGuide type="bottom" id="5TA-Uc-MZZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uYw-Ll-4bf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6PL-y2-2h1">
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FIR-x7-Baq">
                                         <segments>
-                                            <segment title="MAIN PAGE"/>
-                                            <segment title="TRUYỆN HOT"/>
-                                            <segment title="HOÀN THÀNH"/>
+                                            <segment title="HOME"/>
+                                            <segment title="HOT"/>
+                                            <segment title="GENRES"/>
                                         </segments>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
@@ -33,27 +32,37 @@
                                         </connections>
                                     </segmentedControl>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="asF-Ie-E5Q">
-                                        <color key="tintColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="progressTintColor" red="0.0031757031101733446" green="0.10314358025789261" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </progressView>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="grf-XP-cSn">
+                                        <segments>
+                                            <segment title="COMPLETED"/>
+                                            <segment title="ON GOING"/>
+                                            <segment title="NEW"/>
+                                        </segments>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="onSwitchSegment2:" destination="tEt-Xw-GHc" eventType="valueChanged" id="5wt-6j-s2K"/>
+                                        </connections>
+                                    </segmentedControl>
                                 </subviews>
-                                <color key="backgroundColor" red="0.14560455389999999" green="0.41104679399999999" blue="0.1510378597" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.071620680391788483" green="0.60662806034088135" blue="0.78641903400421143" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="asF-Ie-E5Q" firstAttribute="top" secondItem="FIR-x7-Baq" secondAttribute="bottom" constant="8" symbolic="YES" id="C8u-cF-a9a"/>
-                                    <constraint firstAttribute="trailing" secondItem="asF-Ie-E5Q" secondAttribute="trailing" id="CJG-V3-OqL"/>
-                                    <constraint firstAttribute="height" constant="58" id="EwQ-p9-m5S"/>
-                                    <constraint firstAttribute="bottom" secondItem="FIR-x7-Baq" secondAttribute="bottom" constant="15" id="LOb-39-xTn"/>
-                                    <constraint firstItem="FIR-x7-Baq" firstAttribute="leading" secondItem="6PL-y2-2h1" secondAttribute="leading" constant="8" id="Nfx-W5-mD2"/>
-                                    <constraint firstAttribute="trailing" secondItem="FIR-x7-Baq" secondAttribute="trailing" constant="8" id="cFm-o9-E77"/>
-                                    <constraint firstAttribute="bottom" secondItem="asF-Ie-E5Q" secondAttribute="bottom" id="fmu-KW-6JB"/>
-                                    <constraint firstItem="asF-Ie-E5Q" firstAttribute="leading" secondItem="6PL-y2-2h1" secondAttribute="leading" id="hOS-Iv-hr4"/>
-                                    <constraint firstItem="FIR-x7-Baq" firstAttribute="top" secondItem="6PL-y2-2h1" secondAttribute="top" constant="20" id="mpl-TN-d00"/>
+                                    <constraint firstAttribute="trailing" secondItem="grf-XP-cSn" secondAttribute="trailing" constant="8" id="6qw-Lg-rfB"/>
+                                    <constraint firstAttribute="height" constant="76" id="HAi-IP-saF"/>
+                                    <constraint firstAttribute="trailing" secondItem="FIR-x7-Baq" secondAttribute="trailing" constant="8" id="Jbw-Gh-Opj"/>
+                                    <constraint firstItem="grf-XP-cSn" firstAttribute="top" secondItem="FIR-x7-Baq" secondAttribute="bottom" id="Rsa-BB-ndj"/>
+                                    <constraint firstItem="grf-XP-cSn" firstAttribute="top" secondItem="FIR-x7-Baq" secondAttribute="bottom" id="Snh-ve-hAp"/>
+                                    <constraint firstItem="FIR-x7-Baq" firstAttribute="leading" secondItem="6PL-y2-2h1" secondAttribute="leading" constant="8" id="WuU-i4-5GR"/>
+                                    <constraint firstItem="asF-Ie-E5Q" firstAttribute="leading" secondItem="6PL-y2-2h1" secondAttribute="leading" id="X1N-p6-QsC"/>
+                                    <constraint firstItem="asF-Ie-E5Q" firstAttribute="top" secondItem="grf-XP-cSn" secondAttribute="bottom" constant="1" id="hM8-zq-DDl"/>
+                                    <constraint firstItem="asF-Ie-E5Q" firstAttribute="centerX" secondItem="grf-XP-cSn" secondAttribute="centerX" id="hhX-Yj-tnA"/>
+                                    <constraint firstItem="grf-XP-cSn" firstAttribute="leading" secondItem="6PL-y2-2h1" secondAttribute="leading" constant="8" id="jv5-sd-1lO"/>
+                                    <constraint firstAttribute="trailing" secondItem="asF-Ie-E5Q" secondAttribute="trailing" id="nrM-cl-xn5"/>
+                                    <constraint firstAttribute="bottom" secondItem="asF-Ie-E5Q" secondAttribute="bottom" id="oHZ-T0-czG"/>
+                                    <constraint firstItem="FIR-x7-Baq" firstAttribute="top" secondItem="6PL-y2-2h1" secondAttribute="top" constant="17" id="ymr-hQ-csc"/>
+                                    <constraint firstItem="asF-Ie-E5Q" firstAttribute="centerX" secondItem="FIR-x7-Baq" secondAttribute="centerX" id="ypB-oG-EjD"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="C8u-cF-a9a"/>
-                                    </mask>
-                                </variation>
                             </view>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUG-E5-K7C">
                                 <constraints>
@@ -80,7 +89,7 @@
                                     </barButtonItem>
                                 </items>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="barTintColor" red="0.14560455389999999" green="0.41104679399999999" blue="0.1510378597" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.071620680391788483" green="0.60662806034088135" blue="0.78641903400421143" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="jrR-t0-wEt"/>
@@ -91,19 +100,15 @@
                         <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="5TA-Uc-MZZ" firstAttribute="top" secondItem="wUG-E5-K7C" secondAttribute="bottom" id="8aY-cY-GMA"/>
-                            <constraint firstItem="6PL-y2-2h1" firstAttribute="leading" secondItem="uYw-Ll-4bf" secondAttribute="leadingMargin" constant="-20" id="BQO-87-tQA"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="6PL-y2-2h1" secondAttribute="trailing" constant="-20" id="F51-Jr-i2w"/>
-                            <constraint firstItem="wUG-E5-K7C" firstAttribute="leading" secondItem="uYw-Ll-4bf" secondAttribute="leadingMargin" constant="-20" id="LUy-2v-hYG"/>
-                            <constraint firstItem="wUG-E5-K7C" firstAttribute="trailing" secondItem="uYw-Ll-4bf" secondAttribute="trailingMargin" constant="20" id="OZ7-W7-BeY"/>
+                            <constraint firstAttribute="trailing" secondItem="6PL-y2-2h1" secondAttribute="trailing" constant="-4" id="IyV-Db-mw5"/>
+                            <constraint firstItem="wUG-E5-K7C" firstAttribute="leading" secondItem="6PL-y2-2h1" secondAttribute="leading" id="RHV-cU-rw9"/>
                             <constraint firstItem="5TA-Uc-MZZ" firstAttribute="top" secondItem="wUG-E5-K7C" secondAttribute="bottom" id="SAg-vb-aEv"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wUG-E5-K7C" secondAttribute="trailing" id="hod-Q4-0Gp"/>
-                            <constraint firstItem="wUG-E5-K7C" firstAttribute="leading" secondItem="uYw-Ll-4bf" secondAttribute="leadingMargin" id="lDw-UC-hT2"/>
-                            <constraint firstItem="6PL-y2-2h1" firstAttribute="top" secondItem="uYw-Ll-4bf" secondAttribute="topMargin" id="uu3-lY-bzS"/>
+                            <constraint firstItem="6PL-y2-2h1" firstAttribute="top" secondItem="uYw-Ll-4bf" secondAttribute="top" id="UqQ-vS-WP8"/>
+                            <constraint firstItem="wUG-E5-K7C" firstAttribute="trailing" secondItem="6PL-y2-2h1" secondAttribute="trailing" id="Y07-i3-ON0"/>
+                            <constraint firstItem="6PL-y2-2h1" firstAttribute="leading" secondItem="uYw-Ll-4bf" secondAttribute="leading" constant="-4" id="mFL-1K-Tth"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="hod-Q4-0Gp"/>
-                                <exclude reference="lDw-UC-hT2"/>
                                 <exclude reference="SAg-vb-aEv"/>
                             </mask>
                         </variation>
@@ -113,11 +118,12 @@
                         <outlet property="containerTab" destination="6PL-y2-2h1" id="gZD-Uv-FYa"/>
                         <outlet property="processView" destination="asF-Ie-E5Q" id="8ZG-Xt-jVr"/>
                         <outlet property="segmentTab" destination="FIR-x7-Baq" id="Zkd-KQ-WCN"/>
+                        <outlet property="segmentTab2" destination="grf-XP-cSn" id="4ya-KI-CNK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="orM-PW-ZN1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="904" y="137"/>
+            <point key="canvasLocation" x="903.20000000000005" y="136.28185907046478"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -128,7 +134,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firstimage" translatesAutoresizingMaskIntoConstraints="NO" id="sEV-xg-CUz">
@@ -152,7 +158,7 @@
                                 </variation>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.071620680389999997" green="0.60662806030000005" blue="0.78641903400000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="sEV-xg-CUz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="165" id="3bz-ft-r7y"/>
                             <constraint firstItem="sEV-xg-CUz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="154" id="7MJ-Us-rjS"/>
