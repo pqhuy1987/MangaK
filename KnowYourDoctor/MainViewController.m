@@ -11,13 +11,13 @@
 @import WebKit;
 @import GoogleMobileAds;
 
-#define FirstPage @"http://haynhucnhoi.vn/"
-#define SecondPage @"http://haynhucnhoi.vn/new"
-#define ThirdPage @"http://haynhucnhoi.vn/video/new"
+#define FirstPage @"http://xem.vn/"
+#define SecondPage @"http://xem.vn/vote"
+#define ThirdPage @"http://xem.vn/video"
 
-#define FourPage @"http://haynhucnhoi.vn/gif"
-#define FivePage @"http://haynhucnhoi.vn/chu-de/truyen-tranh-xao-lon"
-#define SixPage @"http://haynhucnhoi.vn/chu-de/truyen-tranh-hay-nhuc-nhoi"
+#define FourPage @"http://xem.vn/hot"
+#define FivePage @"http://xem.vn/goc-thu-gian"
+#define SixPage @"http://xem.vn/video-clip-bua"
 
 #define TABHEIGHT 58
 
