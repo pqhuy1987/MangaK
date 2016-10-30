@@ -488,9 +488,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = JQNK74493B;
 				INFOPLIST_FILE = KnowYourDoctor/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.haynhucnhoi.100;
+				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.muvik.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -503,9 +502,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = JQNK74493B;
 				INFOPLIST_FILE = KnowYourDoctor/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.haynhucnhoi.100;
+				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.muvik.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

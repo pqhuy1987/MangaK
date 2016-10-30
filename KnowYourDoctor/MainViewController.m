@@ -11,17 +11,17 @@
 @import WebKit;
 @import GoogleMobileAds;
 
-#define FirstPage @"http://haynhucnhoi.vn/"
-#define SecondPage @"http://haynhucnhoi.vn/new"
-#define ThirdPage @"http://haynhucnhoi.vn/video/new"
+#define FirstPage @"http://muvik.tv/"
+#define SecondPage @"http://muvik.tv/explore"
+#define ThirdPage @"http://muvik.tv/collection"
 
-#define FourPage @"http://haynhucnhoi.vn/gif"
-#define FivePage @"http://haynhucnhoi.vn/chu-de/truyen-tranh-xao-lon"
-#define SixPage @"http://haynhucnhoi.vn/chu-de/truyen-tranh-hay-nhuc-nhoi"
+#define FourPage @"http://muvik.tv/trend"
+#define FivePage @"http://muvik.tv/feature"
+#define SixPage @"http://muvik.tv/new"
 
 #define TABHEIGHT 58
 
-#define ADID @"ca-app-pub-5722562744549789/2259742550"
+#define ADID @"ca-app-pub-5722562744549789/8502922550"
 
 @interface MainViewController () <WKNavigationDelegate> {
     //UIActivityIndicatorView *spinView;
