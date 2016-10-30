@@ -43,7 +43,7 @@
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="grf-XP-cSn">
                                         <rect key="frame" x="8" y="45" width="367" height="29"/>
                                         <segments>
-                                            <segment title="XU HƯỚNG"/>
+                                            <segment title="ĐĂNG NHẬP"/>
                                             <segment title="NỔI BẬT"/>
                                             <segment title="MỚI NHẤT"/>
                                         </segments>

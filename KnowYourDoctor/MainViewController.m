@@ -15,7 +15,7 @@
 #define SecondPage @"http://muvik.tv/explore"
 #define ThirdPage @"http://muvik.tv/collection"
 
-#define FourPage @"http://muvik.tv/trend"
+#define FourPage @"https://www.facebook.com/v2.5/dialog/oauth?app_id=501698263332000&client_id=501698263332000&display=popup&domain=muvik.tv&e2e=%7B%7D&locale=en_GB&origin=1&redirect_uri=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FfTmIQU3LxvB.js%3Fversion%3D42%23cb%3Df36c5c93997252c%26domain%3Dmuvik.tv%26origin%3Dhttp%253A%252F%252Fmuvik.tv%252Ff1a2c6db120b3d8%26relation%3Dopener%26frame%3Df13c6a2384bfb8c&response_type=token%2Csigned_request&return_scopes=true&scope=email%2Cpublic_profile&sdk=joey&version=v2.5"
 #define FivePage @"http://muvik.tv/feature"
 #define SixPage @"http://muvik.tv/new"
 
