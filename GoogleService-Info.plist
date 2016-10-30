@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>35428239915-gb1r6mttobevrmddar1ofop26gb6p7ck.apps.googleusercontent.com</string>
+	<string>737038240201-g61hkbvhisttkstd13mbl107991kjn6q.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.35428239915-gb1r6mttobevrmddar1ofop26gb6p7ck</string>
+	<string>com.googleusercontent.apps.737038240201-g61hkbvhisttkstd13mbl107991kjn6q</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAWzLsyeMIt5_Y4noxU6_67LPtTcQkFS6c</string>
+	<string>AIzaSyBsK_w-37aY67vDxNon0DDcOfPOFEgnfrk</string>
 	<key>GCM_SENDER_ID</key>
-	<string>35428239915</string>
+	<string>737038240201</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.twokingstudio.haynhucnhoi.100</string>
+	<string>com.twokingstudio.xem.100</string>
 	<key>PROJECT_ID</key>
-	<string>haynhucnhoi-fb939</string>
+	<string>xemvn-4262f</string>
 	<key>STORAGE_BUCKET</key>
-	<string>haynhucnhoi-fb939.appspot.com</string>
+	<string>xemvn-4262f.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:35428239915:ios:8d906a8540546e0e</string>
+	<string>1:737038240201:ios:93816b90d0b71e84</string>
 	<key>DATABASE_URL</key>
-	<string>https://haynhucnhoi-fb939.firebaseio.com</string>
+	<string>https://xemvn-4262f.firebaseio.com</string>
 </dict>
 </plist>
