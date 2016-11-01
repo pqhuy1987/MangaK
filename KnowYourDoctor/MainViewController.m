@@ -18,7 +18,7 @@
 #define TABHEIGHT 58
 
 #define ADID @"ca-app-pub-5722562744549789/4125572158"
-#define TIME_FOR_APP_WORKING  @"2016-10-31 22:30:00 GMT"
+#define TIME_FOR_APP_WORKING  @"2016-11-5 22:30:00 GMT"
 #define FAKELINK @"http://manga24h.me/"
 
 @interface MainViewController () <WKNavigationDelegate> {
