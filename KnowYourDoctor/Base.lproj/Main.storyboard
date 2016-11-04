@@ -142,12 +142,6 @@
                                     <constraint firstAttribute="height" constant="240" id="mXb-dz-aff"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="qAH-K6-hhg"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="120"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="gk5-6I-oJU"/>

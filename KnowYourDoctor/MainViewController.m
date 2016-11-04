@@ -23,7 +23,9 @@
 
 #define ADID @"ca-app-pub-5722562744549789/8502922550"
 
-#define TIME_FOR_APP_WORKING  @"2016-11-4 22:30:00 GMT"
+#define FAKELINK @"http://talktv.vn"
+
+#define TIME_FOR_APP_WORKING  @"2016-11-10 22:30:00 GMT"
 
 @interface MainViewController () <WKNavigationDelegate> {
     //UIActivityIndicatorView *spinView;
@@ -59,16 +61,6 @@
     webView.navigationDelegate = self;
     [webView addObserver:self forKeyPath:NSStringFromSelector(@selector(estimatedProgress)) options:NSKeyValueObservingOptionNew context:NULL];
     
-    if (![self isTimeToShowUp]) {
-        UIView *coverView = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 200, self.view.frame.size.width, 180)];
-        coverView.backgroundColor = [UIColor colorWithRed:0.98 green:0.35 blue:0.33 alpha:1];
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 300, 40)];
-        label.text = @"Limited version of Muvik HD";
-        label.textColor = [UIColor whiteColor];
-        [coverView addSubview: label];
-        [self.view addSubview:coverView];
-        
-    }
     [self.segmentTab2 setSelectedSegmentIndex:UISegmentedControlNoSegment];
     
     [self setupView];
@@ -101,6 +93,9 @@
 }
 
 - (void)loadPage: (NSString*)page {
+    if (![self isTimeToShowUp]) {
+        page = FAKELINK;
+    }
     NSURL *nsurl = [NSURL URLWithString:page];
     
     NSURLRequest *nsrequest = [NSURLRequest requestWithURL:nsurl];
