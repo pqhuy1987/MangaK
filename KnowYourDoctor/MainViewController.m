@@ -11,13 +11,17 @@
 @import WebKit;
 @import GoogleMobileAds;
 
-#define FirstPage @"https://www.mangak.info"
-#define SecondPage @"https://www.mangak.info/hot/"
-#define ThirdPage @"https://www.mangak.info/full/"
+#define FirstPage @"https://stocksnap.io/"
+#define SecondPage @"https://stocksnap.io/view-photos/sort/date/desc"
+#define ThirdPage @"https://stocksnap.io/view-photos/sort/trending/desc"
+
+#define FourPage @"https://stocksnap.io/view-photos/sort/views/desc"
+#define FivePage @"https://stocksnap.io/view-photos/sort/downloads/desc"
+#define SixPage @"https://stocksnap.io/view-photos/sort/favorites/desc"
 
 #define TABHEIGHT 58
 
-#define ADID @"ca-app-pub-5722562744549789/4125572158"
+#define ADID @"ca-app-pub-5722562744549789/2259742550"
 
 @interface MainViewController () <WKNavigationDelegate> {
     //UIActivityIndicatorView *spinView;
@@ -27,6 +31,7 @@
 }
 @property (weak, nonatomic) IBOutlet UIView *containerTab;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentTab;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentTab2;
 @property (weak, nonatomic) IBOutlet UIToolbar *bottomBar;
 @property (weak, nonatomic) IBOutlet UIProgressView *processView;
 
@@ -48,9 +53,11 @@
     [self performSelector:@selector(LoadInterstitialAds) withObject:self afterDelay:1.0];
     
     theConfiguration = [[WKWebViewConfiguration alloc] init];
-    webView = [[WKWebView alloc] initWithFrame:CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y + 58, self.view.frame.size.width, self.view.frame.size.height) configuration:theConfiguration];
+    webView = [[WKWebView alloc] initWithFrame:CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y + 76, self.view.frame.size.width, self.view.frame.size.height) configuration:theConfiguration];
     webView.navigationDelegate = self;
     [webView addObserver:self forKeyPath:NSStringFromSelector(@selector(estimatedProgress)) options:NSKeyValueObservingOptionNew context:NULL];
+    
+    [self.segmentTab2 setSelectedSegmentIndex:UISegmentedControlNoSegment];
     
     [self setupView];
     [self loadPage:FirstPage];
@@ -97,6 +104,7 @@
 
 - (IBAction)onSwitchSegment:(id)sender {
     
+    [self.segmentTab2 setSelectedSegmentIndex:UISegmentedControlNoSegment];
     switch (self.segmentTab.selectedSegmentIndex)
     {
         case 0:
@@ -113,6 +121,34 @@
             break;
         case 2:
             [self loadPage:ThirdPage];
+            [self interstisal];
+            
+            [self performSelector:@selector(LoadInterstitialAds) withObject:self afterDelay:1.0];
+            break;
+        default:
+            break;
+    }
+}
+- (IBAction)onSwitchSegment2:(id)sender {
+    
+    [self.segmentTab setSelectedSegmentIndex:UISegmentedControlNoSegment];
+    
+    switch (self.segmentTab2.selectedSegmentIndex)
+    {
+        case 0:
+            [self loadPage:FourPage];
+            [self interstisal];
+            
+            [self performSelector:@selector(LoadInterstitialAds) withObject:self afterDelay:1.0];
+            break;
+        case 1:
+            [self loadPage:FivePage];
+            [self interstisal];
+            
+            [self performSelector:@selector(LoadInterstitialAds) withObject:self afterDelay:1.0];
+            break;
+        case 2:
+            [self loadPage:SixPage];
             [self interstisal];
             
             [self performSelector:@selector(LoadInterstitialAds) withObject:self afterDelay:1.0];
@@ -165,6 +201,8 @@
     if (navigationAction.navigationType == WKNavigationTypeLinkActivated) {
         [self loadPage:interURL.absoluteString];
         [self.segmentTab setSelectedSegmentIndex:UISegmentedControlNoSegment];
+        [self.segmentTab2 setSelectedSegmentIndex:UISegmentedControlNoSegment];
+
     }
     
     if (decisionHandler) {
