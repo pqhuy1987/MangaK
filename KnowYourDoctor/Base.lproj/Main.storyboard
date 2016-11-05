@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,48 +22,62 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6PL-y2-2h1">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="76"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FIR-x7-Baq">
+                                        <rect key="frame" x="8" y="17" width="367" height="29"/>
                                         <segments>
-                                            <segment title="MAIN PAGE"/>
-                                            <segment title="TRUYỆN HOT"/>
-                                            <segment title="HOÀN THÀNH"/>
+                                            <segment title="FREESTOCK"/>
+                                            <segment title="ANIMALS"/>
+                                            <segment title="NATURE"/>
                                         </segments>
-                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                         <connections>
                                             <action selector="onSwitchSegment:" destination="tEt-Xw-GHc" eventType="valueChanged" id="sr1-CD-RT3"/>
                                         </connections>
                                     </segmentedControl>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="asF-Ie-E5Q">
-                                        <color key="tintColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="74" width="383" height="2"/>
                                         <color key="progressTintColor" red="0.0031757031101733446" green="0.10314358025789261" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </progressView>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="grf-XP-cSn">
+                                        <rect key="frame" x="8" y="45" width="367" height="29"/>
+                                        <segments>
+                                            <segment title="OBJECT"/>
+                                            <segment title="PEOPLE"/>
+                                            <segment title="ARCHITECTURE"/>
+                                        </segments>
+                                        <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                        <connections>
+                                            <action selector="onSwitchSegment2:" destination="tEt-Xw-GHc" eventType="valueChanged" id="5wt-6j-s2K"/>
+                                        </connections>
+                                    </segmentedControl>
                                 </subviews>
-                                <color key="backgroundColor" red="0.14560455389999999" green="0.41104679399999999" blue="0.1510378597" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.63615119457244873" green="0.57520395517349243" blue="0.23263069987297058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="asF-Ie-E5Q" firstAttribute="top" secondItem="FIR-x7-Baq" secondAttribute="bottom" constant="8" symbolic="YES" id="C8u-cF-a9a"/>
-                                    <constraint firstAttribute="trailing" secondItem="asF-Ie-E5Q" secondAttribute="trailing" id="CJG-V3-OqL"/>
-                                    <constraint firstAttribute="height" constant="58" id="EwQ-p9-m5S"/>
-                                    <constraint firstAttribute="bottom" secondItem="FIR-x7-Baq" secondAttribute="bottom" constant="15" id="LOb-39-xTn"/>
-                                    <constraint firstItem="FIR-x7-Baq" firstAttribute="leading" secondItem="6PL-y2-2h1" secondAttribute="leading" constant="8" id="Nfx-W5-mD2"/>
-                                    <constraint firstAttribute="trailing" secondItem="FIR-x7-Baq" secondAttribute="trailing" constant="8" id="cFm-o9-E77"/>
-                                    <constraint firstAttribute="bottom" secondItem="asF-Ie-E5Q" secondAttribute="bottom" id="fmu-KW-6JB"/>
-                                    <constraint firstItem="asF-Ie-E5Q" firstAttribute="leading" secondItem="6PL-y2-2h1" secondAttribute="leading" id="hOS-Iv-hr4"/>
-                                    <constraint firstItem="FIR-x7-Baq" firstAttribute="top" secondItem="6PL-y2-2h1" secondAttribute="top" constant="20" id="mpl-TN-d00"/>
+                                    <constraint firstAttribute="trailing" secondItem="grf-XP-cSn" secondAttribute="trailing" constant="8" id="6qw-Lg-rfB"/>
+                                    <constraint firstAttribute="height" constant="76" id="HAi-IP-saF"/>
+                                    <constraint firstAttribute="trailing" secondItem="FIR-x7-Baq" secondAttribute="trailing" constant="8" id="Jbw-Gh-Opj"/>
+                                    <constraint firstItem="grf-XP-cSn" firstAttribute="top" secondItem="FIR-x7-Baq" secondAttribute="bottom" id="Rsa-BB-ndj"/>
+                                    <constraint firstItem="grf-XP-cSn" firstAttribute="top" secondItem="FIR-x7-Baq" secondAttribute="bottom" id="Snh-ve-hAp"/>
+                                    <constraint firstItem="FIR-x7-Baq" firstAttribute="leading" secondItem="6PL-y2-2h1" secondAttribute="leading" constant="8" id="WuU-i4-5GR"/>
+                                    <constraint firstItem="asF-Ie-E5Q" firstAttribute="leading" secondItem="6PL-y2-2h1" secondAttribute="leading" id="X1N-p6-QsC"/>
+                                    <constraint firstItem="asF-Ie-E5Q" firstAttribute="top" secondItem="grf-XP-cSn" secondAttribute="bottom" constant="1" id="hM8-zq-DDl"/>
+                                    <constraint firstItem="asF-Ie-E5Q" firstAttribute="centerX" secondItem="grf-XP-cSn" secondAttribute="centerX" id="hhX-Yj-tnA"/>
+                                    <constraint firstItem="grf-XP-cSn" firstAttribute="leading" secondItem="6PL-y2-2h1" secondAttribute="leading" constant="8" id="jv5-sd-1lO"/>
+                                    <constraint firstAttribute="trailing" secondItem="asF-Ie-E5Q" secondAttribute="trailing" id="nrM-cl-xn5"/>
+                                    <constraint firstAttribute="bottom" secondItem="asF-Ie-E5Q" secondAttribute="bottom" id="oHZ-T0-czG"/>
+                                    <constraint firstItem="FIR-x7-Baq" firstAttribute="top" secondItem="6PL-y2-2h1" secondAttribute="top" constant="17" id="ymr-hQ-csc"/>
+                                    <constraint firstItem="asF-Ie-E5Q" firstAttribute="centerX" secondItem="FIR-x7-Baq" secondAttribute="centerX" id="ypB-oG-EjD"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="C8u-cF-a9a"/>
-                                    </mask>
-                                </variation>
                             </view>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUG-E5-K7C">
+                                <rect key="frame" x="-4" y="642" width="383" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="KXX-aQ-IZa"/>
-                                    <constraint firstAttribute="height" constant="44" id="jrR-t0-wEt"/>
+                                    <constraint firstAttribute="height" constant="25" id="YZA-lp-cFp"/>
                                 </constraints>
                                 <items>
-                                    <barButtonItem title="Back" id="Vp5-Xh-gky">
+                                    <barButtonItem systemItem="rewind" id="Vp5-Xh-gky">
                                         <connections>
                                             <action selector="onTouchBack:" destination="tEt-Xw-GHc" id="Ebb-1W-gab"/>
                                         </connections>
@@ -73,51 +89,37 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="ryF-1Q-y9R"/>
-                                    <barButtonItem title="Forward" id="of1-25-Fgo">
+                                    <barButtonItem systemItem="fastForward" id="of1-25-Fgo">
                                         <connections>
                                             <action selector="onTouchNext:" destination="tEt-Xw-GHc" id="Qkr-9U-HBG"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="barTintColor" red="0.14560455389999999" green="0.41104679399999999" blue="0.1510378597" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="jrR-t0-wEt"/>
-                                    </mask>
-                                </variation>
+                                <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <color key="barTintColor" red="0.63615119457244873" green="0.57520395517349243" blue="0.23263069987297058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="5TA-Uc-MZZ" firstAttribute="top" secondItem="wUG-E5-K7C" secondAttribute="bottom" id="8aY-cY-GMA"/>
-                            <constraint firstItem="6PL-y2-2h1" firstAttribute="leading" secondItem="uYw-Ll-4bf" secondAttribute="leadingMargin" constant="-20" id="BQO-87-tQA"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="6PL-y2-2h1" secondAttribute="trailing" constant="-20" id="F51-Jr-i2w"/>
-                            <constraint firstItem="wUG-E5-K7C" firstAttribute="leading" secondItem="uYw-Ll-4bf" secondAttribute="leadingMargin" constant="-20" id="LUy-2v-hYG"/>
-                            <constraint firstItem="wUG-E5-K7C" firstAttribute="trailing" secondItem="uYw-Ll-4bf" secondAttribute="trailingMargin" constant="20" id="OZ7-W7-BeY"/>
-                            <constraint firstItem="5TA-Uc-MZZ" firstAttribute="top" secondItem="wUG-E5-K7C" secondAttribute="bottom" id="SAg-vb-aEv"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wUG-E5-K7C" secondAttribute="trailing" id="hod-Q4-0Gp"/>
-                            <constraint firstItem="wUG-E5-K7C" firstAttribute="leading" secondItem="uYw-Ll-4bf" secondAttribute="leadingMargin" id="lDw-UC-hT2"/>
-                            <constraint firstItem="6PL-y2-2h1" firstAttribute="top" secondItem="uYw-Ll-4bf" secondAttribute="topMargin" id="uu3-lY-bzS"/>
+                            <constraint firstAttribute="trailing" secondItem="wUG-E5-K7C" secondAttribute="trailing" constant="-4" id="5I0-Gw-7TN"/>
+                            <constraint firstItem="wUG-E5-K7C" firstAttribute="leading" secondItem="uYw-Ll-4bf" secondAttribute="leading" constant="-4" id="6Su-KB-uXz"/>
+                            <constraint firstAttribute="trailing" secondItem="6PL-y2-2h1" secondAttribute="trailing" constant="-4" id="IyV-Db-mw5"/>
+                            <constraint firstAttribute="bottom" secondItem="wUG-E5-K7C" secondAttribute="bottom" id="NP9-bw-O8z"/>
+                            <constraint firstItem="6PL-y2-2h1" firstAttribute="top" secondItem="uYw-Ll-4bf" secondAttribute="top" id="UqQ-vS-WP8"/>
+                            <constraint firstItem="6PL-y2-2h1" firstAttribute="leading" secondItem="uYw-Ll-4bf" secondAttribute="leading" constant="-4" id="mFL-1K-Tth"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="hod-Q4-0Gp"/>
-                                <exclude reference="lDw-UC-hT2"/>
-                                <exclude reference="SAg-vb-aEv"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="bottomBar" destination="wUG-E5-K7C" id="SJr-K4-gPG"/>
                         <outlet property="containerTab" destination="6PL-y2-2h1" id="gZD-Uv-FYa"/>
                         <outlet property="processView" destination="asF-Ie-E5Q" id="8ZG-Xt-jVr"/>
                         <outlet property="segmentTab" destination="FIR-x7-Baq" id="Zkd-KQ-WCN"/>
+                        <outlet property="segmentTab2" destination="grf-XP-cSn" id="4ya-KI-CNK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="orM-PW-ZN1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="904" y="137"/>
+            <point key="canvasLocation" x="903.20000000000005" y="136.28185907046478"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -132,6 +134,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firstimage" translatesAutoresizingMaskIntoConstraints="NO" id="sEV-xg-CUz">
+                                <rect key="frame" x="67.5" y="213.5" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="gk5-6I-oJU"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="hdG-Zj-ugD"/>
@@ -152,7 +155,7 @@
                                 </variation>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.97245663404464722" green="0.97261565923690796" blue="0.97242289781570435" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="sEV-xg-CUz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="165" id="3bz-ft-r7y"/>
                             <constraint firstItem="sEV-xg-CUz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="154" id="7MJ-Us-rjS"/>
