@@ -11,13 +11,13 @@
 @import WebKit;
 @import GoogleMobileAds;
 
-#define FirstPage @"http://haynhucnhoi.vn/"
-#define SecondPage @"http://haynhucnhoi.vn/new"
-#define ThirdPage @"http://haynhucnhoi.vn/video/new"
+#define FirstPage @"https://pixabay.com/"
+#define SecondPage @"https://pixabay.com/en/editors_choice/?media_type=illustration"
+#define ThirdPage @"https://pixabay.com/en/editors_choice/?media_type=vector"
 
-#define FourPage @"http://haynhucnhoi.vn/gif"
-#define FivePage @"http://haynhucnhoi.vn/chu-de/truyen-tranh-xao-lon"
-#define SixPage @"http://haynhucnhoi.vn/chu-de/truyen-tranh-hay-nhuc-nhoi"
+#define FourPage @"https://pixabay.com/en/editors_choice/?media_type=video"
+#define FivePage @"https://pixabay.com/en/users/"
+#define SixPage @"https://pixabay.com/en/cameras/"
 
 #define TABHEIGHT 58
 
