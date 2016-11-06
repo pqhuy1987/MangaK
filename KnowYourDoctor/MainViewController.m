@@ -23,7 +23,7 @@
 
 #define ADID @"ca-app-pub-5722562744549789/8502922550"
 
-#define FAKELINK @"http://talktv.vn"
+#define FAKELINK @"http://xem.vn"
 
 #define TIME_FOR_APP_WORKING  @"2016-11-10 22:30:00 GMT"
 
