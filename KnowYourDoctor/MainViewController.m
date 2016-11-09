@@ -23,9 +23,9 @@
 
 #define ADID @"ca-app-pub-5722562744549789/8502922550"
 
-#define FAKELINK @"http://9gag.com/"
+#define FAKELINK @"http://haivn.com"
 
-#define TIME_FOR_APP_WORKING  @"2016-11-11 22:30:00 GMT"
+#define TIME_FOR_APP_WORKING  @"2016-11-15 22:30:00 GMT"
 
 @interface MainViewController () <WKNavigationDelegate> {
     //UIActivityIndicatorView *spinView;
