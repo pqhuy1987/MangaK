@@ -23,7 +23,7 @@
 
 #define ADID @"ca-app-pub-5722562744549789/2259742550"
 
-#define TIME_FOR_APP_WORKING  @"2016-11-12 22:30:00 GMT"
+#define TIME_FOR_APP_WORKING  @"2016-11-13 22:30:00 GMT"
 
 #define FAKELINK @"http://www.gratisography.com"
 
