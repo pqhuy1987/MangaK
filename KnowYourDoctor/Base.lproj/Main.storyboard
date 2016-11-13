@@ -27,7 +27,7 @@
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FIR-x7-Baq">
                                         <rect key="frame" x="8" y="17" width="367" height="29"/>
                                         <segments>
-                                            <segment title="STOCKSNAP"/>
+                                            <segment title="MAIN"/>
                                             <segment title="NEW"/>
                                             <segment title="TRENDING"/>
                                         </segments>
@@ -180,6 +180,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="firstimage" width="256" height="256"/>
+        <image name="firstimage" width="512" height="512"/>
     </resources>
 </document>

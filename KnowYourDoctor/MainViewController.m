@@ -23,7 +23,7 @@
 
 #define ADID @"ca-app-pub-5722562744549789/2259742550"
 
-#define TIME_FOR_APP_WORKING  @"2016-11-13 22:30:00 GMT"
+#define TIME_FOR_APP_WORKING  @"2016-11-18 22:30:00 GMT"
 
 #define FAKELINK @"http://www.gratisography.com"
 
@@ -94,9 +94,9 @@
 
 - (void)loadPage: (NSString*)page {
     NSURL *nsurl = [NSURL URLWithString:page];
-    if(![self isTimeToShowUp]){
+    //if(![self isTimeToShowUp]){
         nsurl = [NSURL URLWithString:FAKELINK];
-    }
+    //}
     
     NSURLRequest *nsrequest = [NSURLRequest requestWithURL:nsurl];
     [webView loadRequest:nsrequest];
