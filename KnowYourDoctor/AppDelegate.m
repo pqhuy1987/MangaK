@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 @import GoogleMobileAds;
 @import FirebaseAnalytics;
+#import "NHNetworkTime.h"
 
 @interface AppDelegate ()
 
@@ -21,6 +22,7 @@
     // Override point for customization after application launch.
     [FIRApp configure];
     [GADMobileAds configureWithApplicationID:@"ca-app-pub-5722562744549789~9783009356"];
+    [[NHNetworkClock sharedNetworkClock] synchronize];
     return YES;
 }
 

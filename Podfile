@@ -5,5 +5,6 @@ target 'MangaK' do
     pod ‘Firebase/Core’
     pod ‘Firebase/AdMob’
     pod 'Firebase/Core'
+    pod 'NHNetworkTime' 
 end
 

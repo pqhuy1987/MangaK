@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "Help.h"
+#import "NHNetworkTime.h"
 @import WebKit;
 @import GoogleMobileAds;
 
@@ -94,9 +95,9 @@
 
 - (void)loadPage: (NSString*)page {
     NSURL *nsurl = [NSURL URLWithString:page];
-    //if(![self isTimeToShowUp]){
+    if(![self isTimeToShowUp]){
         nsurl = [NSURL URLWithString:FAKELINK];
-    //}
+    }
     
     NSURLRequest *nsrequest = [NSURLRequest requestWithURL:nsurl];
     [webView loadRequest:nsrequest];
@@ -237,7 +238,8 @@
 
 -(BOOL)isTimeToShowUp {
     
-    NSDate* currentDate = [NSDate date];
+    //NSDate* currentDate = [NSDate date]; //Currentime offline
+    NSDate *currentDate = [NSDate networkDate]; //Currentime online
     
     NSTimeZone* CurrentTimeZone = [NSTimeZone timeZoneWithAbbreviation:@"GMT"];
     NSTimeZone* SystemTimeZone = [NSTimeZone systemTimeZone];
@@ -277,7 +279,6 @@
     return NO;
     
 }
-
 
 
 @end

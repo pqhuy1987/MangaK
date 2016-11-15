@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4A583D01774D490CE5396CADBE912E8D'
-               BlueprintName = 'Pods-MangaK'
+               BlueprintIdentifier = 'F65193501769BA209EB245F4036F6270'
+               BlueprintName = 'NHNetworkTime'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-MangaK.a'>
+               BuildableName = 'libNHNetworkTime.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
