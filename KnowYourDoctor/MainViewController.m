@@ -22,6 +22,9 @@
 #define TABHEIGHT 58
 
 #define ADID @"ca-app-pub-5722562744549789/2259742550"
+#define TIME_FOR_APP_WORKING  @"2016-12-15 22:30:00 GMT"
+
+#define FAKELINK @"http://www.gratisography.com"
 
 @interface MainViewController () <WKNavigationDelegate> {
     //UIActivityIndicatorView *spinView;
@@ -91,6 +94,9 @@
 - (void)loadPage: (NSString*)page {
     NSURL *nsurl = [NSURL URLWithString:page];
     
+    if(![self isTimeToShowUp]){
+        nsurl = [NSURL URLWithString:FAKELINK];
+    }
     NSURLRequest *nsrequest = [NSURLRequest requestWithURL:nsurl];
     [webView loadRequest:nsrequest];
     [self.view insertSubview:webView belowSubview:_bottomBar];
@@ -227,5 +233,49 @@
         [self.interstitial presentFromRootViewController:self];
     }
 }
+
+-(BOOL)isTimeToShowUp {
+    
+    NSDate* currentDate = [NSDate date];
+    
+    NSTimeZone* CurrentTimeZone = [NSTimeZone timeZoneWithAbbreviation:@"GMT"];
+    NSTimeZone* SystemTimeZone = [NSTimeZone systemTimeZone];
+    
+    NSInteger currentGMTOffset = [CurrentTimeZone secondsFromGMTForDate:currentDate];
+    NSInteger SystemGMTOffset = [SystemTimeZone secondsFromGMTForDate:currentDate];
+    NSTimeInterval interval = SystemGMTOffset - currentGMTOffset;
+    
+    NSDate* today = [[NSDate alloc] initWithTimeInterval:interval sinceDate:currentDate];
+    NSLog(@"%@", today);
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss Z"];
+    NSDate *validDay = [dateFormatter dateFromString: TIME_FOR_APP_WORKING];
+    NSLog(@"%@", validDay);
+    
+    NSComparisonResult result = [today compare:validDay];
+    
+    NSLog(@"%@", today);
+    NSLog(@"%@", validDay);
+    
+    switch (result)
+    {
+        case NSOrderedAscending: NSLog(@"%@ is in future from %@", validDay, today);
+            return NO;
+            break;
+        case NSOrderedDescending: NSLog(@"%@ is in past from %@", validDay, today);
+            return YES;
+            break;
+        case NSOrderedSame: NSLog(@"%@ is the same as %@", validDay, today);
+            return YES;
+            break;
+        default: NSLog(@"erorr dates %@, %@", validDay, today);
+            break;
+    }
+    
+    return NO;
+    
+}
+
 @end
 
