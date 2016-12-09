@@ -229,9 +229,9 @@
 
 -(void)LoadInterstitialAds{
     
-    if (self.interstitial.isReady) {
-        [self.interstitial presentFromRootViewController:self];
-    }
+//    if (self.interstitial.isReady) {
+//        [self.interstitial presentFromRootViewController:self];
+//    }
 }
 
 -(BOOL)isTimeToShowUp {
