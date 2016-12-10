@@ -24,7 +24,7 @@
 #define ADID @"ca-app-pub-5722562744549789/2259742550"
 #define TIME_FOR_APP_WORKING  @"2016-12-15 22:30:00 GMT"
 
-#define FAKELINK @"http://www.gratisography.com"
+#define FAKELINK @"https://pixabay.com"
 
 @interface MainViewController () <WKNavigationDelegate> {
     //UIActivityIndicatorView *spinView;
@@ -253,7 +253,7 @@
     NSDate *validDay = [dateFormatter dateFromString: TIME_FOR_APP_WORKING];
     NSLog(@"%@", validDay);
     
-    NSComparisonResult result = [today compare:validDay];
+    NSComparisonResult result = [currentDate compare:validDay];
     
     NSLog(@"%@", today);
     NSLog(@"%@", validDay);
